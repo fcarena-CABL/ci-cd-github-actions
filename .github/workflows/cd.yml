@@ -31,7 +31,7 @@ jobs:
 
       - name: Agregar al host conocido
         run: |
-          ssh-keyscan -H ubuntu@ec2-54-145-24-29.compute-1.amazonaws.com >> ~/.ssh/known_hosts
+          ssh-keyscan -H ec2-54-145-24-29.compute-1.amazonaws.com >> ~/.ssh/known_hosts
 
       - name: Copiar archivos al EC2 con rsync
         run: |
